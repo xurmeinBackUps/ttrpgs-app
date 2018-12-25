@@ -6,7 +6,7 @@ import { CombatTrackerComponent } from './combat-tracker/combat-tracker.componen
 import { EncounterBuilderComponent } from './encounter-builder/encounter-builder.component';
 import { SessionPlannerComponent } from './session-planner/session-planner.component';
 
-const routes: Routes = [
+const gmRoutes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'gm-screen', component: GmScreenComponent },
   { path: 'session-planner', component: SessionPlannerComponent },
@@ -15,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(gmRoutes)],
   exports: [RouterModule]
 })
 export class CampaignManagerRoutingModule { }
